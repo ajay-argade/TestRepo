@@ -52,6 +52,7 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:text="ईमेल"
+            android:id="@+id/text"
             />
         <EditText
             android:layout_width="match_parent"
@@ -61,7 +62,6 @@
 
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -82,6 +82,8 @@
     </LinearLayout>
 
 
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,10 +95,8 @@
         android:textColor="#95bef3"
         android:textSize="20sp"
         android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="100dp"
         />
-
-
-
 
 
 
