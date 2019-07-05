@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
     private EditText email, pwd, name;
     public static String SHARED_PREF_NAME = "mySharedPreference";
 
-  SharedPreferences sharedPreferences;
+   SharedPreferences sharedPreferences;
    SharedPreferences.Editor editor;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -36,33 +37,30 @@ public class MainActivity extends AppCompatActivity {
 
         pwd.setText(sharedPreferences.getString("password", null));
 
-
-
-
     }
 
-
-    public void Login(View view) {
+    public void Login(View view)
+    {
         String usrname = name.getText().toString();
         String passwrd = pwd.getText().toString();
-        if (!name.getText().toString().equals("ajay") &&
-                !pwd.getText().toString().equals("ajay")) {
 
+        if (!name.getText().toString().equals("ajay") &&
+                !pwd.getText().toString().equals("ajay"))
+        {
             Log.d("success", "logged in");
             Intent goToHomeActivity = new Intent(this.getApplicationContext(), ActivityHome.class);
             startActivity(goToHomeActivity);
 
             Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_LONG).show();
-        } else {
+        }
+        else
+        {
             Log.d("fail", "not log in");
             Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_LONG).show();
-
         }
 
         editor.putString("username", usrname);
         editor.putString("password", passwrd);
         editor.commit();
-
-
     }
 }

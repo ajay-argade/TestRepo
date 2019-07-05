@@ -9,14 +9,12 @@
     android:background="@drawable/white_bg"
     tools:context="co.uttar.testproject.ActivityHome">
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/ajay"
         android:id="@+id/imageView" />
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,16 +25,14 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
         android:fontFamily="sans-serif-condensed"
-
         android:textAllCaps="true"
-        android:textStyle="bold"
-        />
-
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,9 +41,7 @@
             android:fontFamily="sans-serif-condensed"
             android:textSize="20dp"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"
-            />
-
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,12 +55,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOG OUT"
-        android:onClick="logOut"
-        android:id="@+id/button2"
-        />
 
 </LinearLayout>
